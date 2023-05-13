@@ -13,6 +13,7 @@
     background-position: center;
     position: relative;
     background-image: url(../img/5.jpg);
+    /* z-index: -3; */
 }
 .landing::before {
     content: "";
@@ -22,6 +23,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(107 87 64 / 0.5);
+    /* z-index: -2; */
 }
 /* rgb(197 73 0 / 22%)25%, */
 .landing .logo {
@@ -43,15 +45,64 @@
     gap: 30px;
 }
 .landing .header ul li{
-    margin: 25px 20px;
+    padding: 25px 20px;
 }
 .landing .header ul li:hover a{
-    padding: 0 5px;
+    /* padding: 0 5px; */
     color:rgb(255, 204, 65);
 }
 
-.landing .header ul li a{
+.landing .header a{
     color: white;
+}
+.bar {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+@media  (max-width: 1000px) {
+    .header{
+        opacity: 0;
+    }
+    .display {
+        opacity: 1 !important;
+        z-index: 5;
+        position: relative;
+        backdrop-filter: none !important;
+    }
+    .bar {
+        opacity: 1 !important;
+    }
+    .header .click{
+        display: flex; 
+        flex-direction: column;
+        height: 81px;
+        background: #000000f2;
+        height: 100vh;
+        width: 500%;
+        left: 300px;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        position: relative;
+    }
+    .header .cl{
+        margin: -5px 20px;
+        /* border-bottom: 2px solid white; */
+        padding: 20px !important;
+    }
+    .text {
+        /* z-index: -1; */
+    }
+    .icons {
+        /* z-index: -1; */
+    }
 }
 .landing .text {
     position: absolute;
