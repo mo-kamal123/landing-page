@@ -86,7 +86,7 @@
         background: #000000f2;
         height: 100vh;
         width: 500%;
-        left: 300px;
+        left: -300px;
         justify-content: center;
         align-items: center;
         z-index: 5;
