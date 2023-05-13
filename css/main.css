@@ -68,13 +68,13 @@
 
 @media  (max-width: 1000px) {
     .header{
-        opacity: 0;
+        display: none;
         width: 100% !important;
         height: 100vh;
 
     }
     .display {
-        opacity: 1 !important;
+        display: block !important;
         z-index: 5;
         position: relative;
         backdrop-filter: none !important;
