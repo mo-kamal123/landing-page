@@ -12,7 +12,17 @@ setInterval(() => {
     console.log(text.innerHTML);
 }, 3000);
 
-
+let nav = document.querySelector(".nav");
+let navLi = document.querySelector(".navli");
+let icon = document.querySelector(".bar");
+let head = document.querySelector(".header");
+icon.onclick = function () {
+    nav.classList.toggle('click');
+    navLi.classList.toggle('cl');
+    head.classList.toggle('display');
+    
+};
+console.log (navLi);
 // 'url("imgs/'+imgsArray[randomNum] +'")';
 
 // for (i = 0, i < disc.length, i++ ) {
